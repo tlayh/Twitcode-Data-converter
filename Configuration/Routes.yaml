@@ -1,0 +1,25 @@
+#                                                                        #
+# Routes configuration                                                   #
+#                                                                        #
+# This file contains the configuration for the MVC router.               #
+# Just add your own modifications as necessary.                          #
+#                                                                        #
+# Please refer to the FLOW3 manual for possible configuration options.   #
+#                                                                        #
+
+##
+# Subroutes for the Twitcode package
+#
+
+--
+    name: 'Converter'
+    uriPattern: ''
+    defaults:
+        @package: 'Converter'
+        @controller: 'Converter'
+        @action: 'index'
+        @format: 'html'
+
+--
+    name: 'Default action route'
+    uriPattern: '{@action}'
